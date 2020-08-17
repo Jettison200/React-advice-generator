@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-weight: normal;
+}
+
+.app{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(images/oc-gonzalez-FbN2z3bEaSs-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card{
+    background-color: whitesmoke;
+    max-width: 50vw;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 30px;
+    flex-direction: column;
+    box-shadow: 0px 0px 70px 0px rgba(0,0,0,0.65);
+
+}
+
+
+
+button {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 1px solid #f58987;
+  }
+    
+  button span {
+    color: #f58987;
+    letter-spacing: 0.7px;
+  }
+    
+  button:hover {
+    animation: rotate 0.7s ease-in-out both;
+  }
+    
+  button:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+    
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(3deg);
+    }
+    50% {
+      transform: rotate(-3deg);
+    }
+    75% {
+      transform: rotate(1deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+    
+  @keyframes storm {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    25% {
+      transform: translate3d(4px, 0, 0);
+    }
+    50% {
+      transform: translate3d(-3px, 0, 0);
+    }
+    75% {
+      transform: translate3d(2px, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }  
+
+  @media only screen and (max-width: 800px){
+    .card{
+        max-width: 90vw;
+    }
+  }
