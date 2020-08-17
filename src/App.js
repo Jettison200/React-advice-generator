@@ -10,6 +10,7 @@ class App extends Component {
   componentDidMount() {
     this.fetchAdvice();
   }
+
   randomeHandler = () => {
     let num = Math.floor(Math.random() * (217 - 1 + 1)) + 1;
     return num;
@@ -20,9 +21,9 @@ class App extends Component {
       .then((response) => {
         const data = JSON.parse(response.data + "}");
         const { advice } = data.slip;
-        console.log(advice);
+        //console.log(advice);
         this.setState({
-          advice,
+          advice
         });
       })
       .catch((error) => {
